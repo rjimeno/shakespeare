@@ -1,2 +1,11 @@
-http://www.gutenberg.org/ebooks/1125.txt.utf-8
-http://www.gutenberg.org/ebooks/1796.txt.utf-8
+http://www.gutenberg.org/ebooks/1125.txt.utf-8				ALLS WELL THAT ENDS WELL
+http://www.gutenberg.org/ebooks/1796.txt.utf-8				THE COMPLETE WORKS OF WILLIAM SHAKESPEARE
+http://www.gutenberg.org/files/100/100-0.txt					The Complete Works of William Shakespeare
+http://www.gutenberg.org/cache/epub/23041/pg23041.txt	The Works of William Shakespeare [Cambridge Edition] [Vol. 1 of 9] by Shakespeare
+http://www.gutenberg.org/files/45128/45128-0.txt			The Works of William Shakespeare [Cambridge Edition] [Vol. 2 of 9] by Shakespeare
+http://www.gutenberg.org/cache/epub/50559/pg50559.txt	The Works of William Shakespeare [Cambridge Edition] [Vol. 3 of 9] by Shakespeare
+http://www.gutenberg.org/files/50095/50095-0.txt			The Works of William Shakespeare [Cambridge Edition] [Vol. 4 of 9] by Shakespeare
+http://www.gutenberg.org/files/49297/49297-0.txt			The Works of William Shakespeare [Cambridge Edition] [Vol. 5 of 9] by Shakespeare
+http://www.gutenberg.org/files/49007/49007-0.txt			The Works of William Shakespeare [Cambridge Edition] [Vol. 6 of 9] by Shakespeare
+http://www.gutenberg.org/cache/epub/47715/pg47715.txt	The Works of William Shakespeare [Cambridge Edition] [Vol. 7 of 9] by Shakespeare
+http://www.gutenberg.org/files/49008/49008-0.txt			The Works of William Shakespeare [Cambridge Edition] [Vol. 8 of 9] by Shakespeare
