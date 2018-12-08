@@ -16,7 +16,7 @@ def mapper(file_handle):
         for w in words:
             if 0 == len(w):
                 continue
-            print '{} {}'.format(w,counter)
+            print '{0} {1}'.format(w, counter)
     return  #  d
 
 if '__main__' == __name__:

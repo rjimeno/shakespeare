@@ -14,7 +14,7 @@ def reducer(file_handle):
             sorted_integers = sorted(lines)
             sorted_strings = [str(x) for x in sorted_integers]
             lines_as_string = ' '.join(sorted_strings)
-            print '{} {}'.format(previous_word, lines_as_string)
+            print '{0} {1}'.format(previous_word, lines_as_string)
             previous_word = current_word
             lines.append(int(line))
         else:
