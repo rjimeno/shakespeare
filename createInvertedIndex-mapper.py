@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python2
 
 import sys
 import re
@@ -9,7 +9,6 @@ def mapper(file_handle):
     for line in file_handle:
         counter += 1
         line.strip().lower()
-        #print(f'{counter}: {line}')
         words = re.split(
             '[,.!?:;"()<>\[\]#$=\-/\s]+',
             line.strip().lower()
@@ -17,7 +16,7 @@ def mapper(file_handle):
         for w in words:
             if 0 == len(w):
                 continue
-            print(f'{w} {counter}')
+            print '{} {}'.format(w,counter)
     return  #  d
 
 if '__main__' == __name__:
