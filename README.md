@@ -15,9 +15,11 @@ hadoop fs -mkdir input
 
 hadoop fs -put input/100-0.txt
 
-#hadoop fs -put createInvertedIndex-*
+hadoop fs -rm -r resultsZero
 
 
-hadoop jar /usr/lib/hadoop/hadoop-streaming.jar -input input -output resultsZero -mapper createInvertedIndex-mapper.py  -file createInvertedIndex-mapper.py -reducer createInvertedIndex-reducer.py -file createInvertedIndex-reducer.py
+hadoop jar /usr/lib/hadoop/hadoop-streaming.jar -input input -output resultsZero -mapper "python createInvertedIndex-mapper.py" -file createInvertedIndex-mapper.py -reducer "python createInvertedIndex-reducer.py" -file createInvertedIndex-reducer.py
 
+hadoop fs -get resultsZero
 
+cd resultsZero
