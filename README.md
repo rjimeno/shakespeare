@@ -2,7 +2,7 @@ Suppose we want to offer a service that lets you determine where a given word is
 
 From page 20 of the book Site Reliability Engineering.
 
-The command line for running the job once the data is loaded in HDFS will look like the following:
+Start by SSHing into the master node with a command similar to 'ssh -i ~/KeyPairFile.pem hadoop@ec2-52-86-142-203.compute-1.amazonaws.com'; then:
 
 aws s3 cp s3://rjimeno-shakespeare/100-0.txt .
 
