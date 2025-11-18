@@ -1,25 +1,27 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 import sys
 import re
 
 def reducer(file_handle):
     previous_word = None
+    lines = []
     for row in file_handle:
-        word_line = row.strip().split(' ')
+        word_line = row.strip().split(', ')
         if 2 != len(word_line):
             continue
         current_word, line = word_line
         if previous_word and previous_word != current_word:
-            sorted_integers = sorted(lines)
-            sorted_strings = [str(x) for x in sorted_integers]
-            lines_as_string = ' '.join(sorted_strings)
-            print '{0} {1}'.format(previous_word, lines_as_string)
+            # sorted_integers = sorted(lines)
+            # sorted_strings = [str(x) for x in sorted_integers]
+            lines_as_string = ' '.join(lines) # sorted_strings
+            print(f'{previous_word}, {lines_as_string}')
             previous_word = current_word
-            lines.append(int(line))
+            lines = [line]
         else:
             previous_word = current_word
-            lines = [int(line)]
+            lines.append(line)
+            # lines = [int(line)]
 
 if '__main__' == __name__:
     if 1 <= len(sys.argv[1:]):  # One or more arguments.
