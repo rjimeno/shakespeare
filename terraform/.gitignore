@@ -1,0 +1,16 @@
+# Terraform state and lock files
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+.terraform/
+
+# Terraform variables
+terraform.tfvars
+!terraform.tfvars.example
+
+# IDE and OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
