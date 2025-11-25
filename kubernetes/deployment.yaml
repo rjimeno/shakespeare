@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: lookup
+  name: lookup
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lookup
+  strategy:
+    type: RollingUpdate
+    maxSurge: 1
+    maxUnavailable: 1
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: lookup
+    spec:
+      containers:
+      - image: lookup-image:latest
+        name: lookup-container
+        imagePullPolicy: IfNotPresent # Never (for local), IfNotPresent (for prod?), or Always (for CI?).
+        ports:
+        - containerPort: 5000
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            cpu: "300m"
+            memory: "384Mi"
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 5000
+        livenessProbe:
+          httpGet:
+            path: /lookup?word=the
+            port: 5000
+status: {}
+#Obs.: imagePullPolicy: Always # Fails because lookup-image is not in a registry.
